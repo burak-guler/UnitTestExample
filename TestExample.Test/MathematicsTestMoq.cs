@@ -15,7 +15,7 @@ namespace TestExample.Test
         [Fact]
         public void SumTest()
         {
-            var mathematics = new Mock<IMathematicsService>();
+            var mathematics = new Mock<IMathematicsService>(); 
             mathematics.Setup(m => m.Sum(1, 2))
                 .Returns(3);
             int result = mathematics.Object.Sum(1, 2);
